@@ -50,7 +50,7 @@ pub mod data {
         #[native_db]
         pub struct Robot {
             #[primary_key]
-            pub number: String,
+            pub number: u64,
         }
         impl From<v2::Robot> for Robot {
             fn from(value: v2::Robot) -> Self {
@@ -82,7 +82,7 @@ pub mod data {
         #[native_db]
         pub struct Robot {
             #[primary_key]
-            pub number: String,
+            pub number: u64,
         }
         impl From<v1::Robot> for Robot {
             fn from(value: v1::Robot) -> Self {
