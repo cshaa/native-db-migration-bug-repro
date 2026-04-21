@@ -1,0 +1,11 @@
+[package]
+name = "native-db-migration-bug-repro"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.102"
+native_db = "0.8.2"
+native_model = "0.4.20"
+once_cell = "1.21.4"
+serde = { version = "1.0.228", features = ["derive"] }
